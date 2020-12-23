@@ -1,0 +1,36 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  color: #333950;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.mainText {
+  color: #747b95;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+/*Buttons*/
+.getStarted {
+  background: #5175ff;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  border-radius: 28px;
+  height: 56px;
+  width: 171px;
+}
+
+.getStarted a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+}
