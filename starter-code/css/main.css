@@ -2,6 +2,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.container {
+  text-align: center;
+}
+
 h1 {
   color: #333950;
   font-style: normal;
@@ -22,6 +26,7 @@ h1 {
 .getStarted {
   background: #5175ff;
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  border: none;
   border-radius: 28px;
   height: 56px;
   width: 171px;
@@ -33,4 +38,22 @@ h1 {
   font-size: 1rem;
   line-height: 1.75rem;
   text-decoration: none;
+}
+
+/*card styles*/
+
+.card {
+  border-radius: 13px;
+  width: 327px;
+  height: 508px;
+  margin: auto;
+}
+
+.cardWhite {
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+}
+
+.cardBlue {
+  background: #5175ff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
 }
