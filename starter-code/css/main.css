@@ -10,7 +10,15 @@ body {
 }
 
 .container {
+  background-image: url("/starter-code/assets/shared/logo.svg");
+  background-position: top center;
+  background-size: 155px 30px;
+  background-position-y: 3vh;
+  background-repeat: no-repeat;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -91,4 +99,53 @@ button a {
 .cardBlue {
   background: #5175ff;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+}
+
+.membershipLevel {
+  color: #333950;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-top: 25px;
+}
+
+.membershipCost {
+  color: #333950;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  padding-top: 30px;
+}
+
+.membershipUser {
+  color: #333950;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  padding-top: 30px;
+}
+
+.card ul {
+  padding-top: 20px;
+}
+
+.membershipFeature {
+  color: #747b95;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  padding-top: 15px;
+}
+
+.membershipFeatureWhite {
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.whiteText {
+  color: #ffffff;
+}
+
+.tryForFree {
+  margin-top: 55px;
 }
