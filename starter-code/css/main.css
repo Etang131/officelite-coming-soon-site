@@ -1,24 +1,23 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
-  /*
-  background-image: url("/starter-code/assets/home/bg-pattern-header.svg"),
-    url("/starter-code/assets/home/bg-pattern-footer.svg");
-  background-position: top, bottom;
-  background-size: 100% 458px, 100% 40vh;
-  background-repeat: no-repeat, no-repeat;
-  */
 }
 
 .container {
-  background-image: url("/starter-code/assets/shared/logo.svg");
-  background-position: top center;
-  background-size: 155px 30px;
-  background-position-y: 3vh;
-  background-repeat: no-repeat;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 6.4%;
+  text-align: center;
+}
+
+.logoSection {
+  margin: 25px auto;
+}
+
+.chartImg {
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
 }
 
 h1 {
@@ -35,6 +34,7 @@ h1 {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.625rem;
+  margin: 25px 0 20px 0;
 }
 
 /*Buttons*/
@@ -84,12 +84,15 @@ button a {
 }
 
 /*card styles*/
+.cardSection {
+  margin: 75px auto;
+}
 
 .card {
   border-radius: 13px;
   width: 327px;
   height: 508px;
-  margin: auto;
+  margin: 25px auto;
 }
 
 .cardWhite {
@@ -148,4 +151,19 @@ button a {
 
 .tryForFree {
   margin-top: 55px;
+}
+
+/* Timer section */
+.timerText {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#timeTextBold {
+  color: #5175ff;
 }
