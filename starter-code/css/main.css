@@ -318,14 +318,65 @@ option {
   }
 
   .cardSection {
-    width: 100%;
+    width: 89.7%;
     margin: 25px auto;
   }
 
   .card {
     width: 100%;
-    margin: 15px 3.2%;
+    height: 316px;
+    margin: 15px auto;
     text-align: left;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardPricingSection {
+    margin: 0 3.2%;
+    width: 50%;
+  }
+
+  .cardFeaturesSection {
+    width: 50%;
+  }
+
+  .cardFeaturesSection ul {
+    margin-top: 50px;
+  }
+
+  .tryForFree {
+    margin: 25px 0 0 3.2%;
+  }
+
+  .timerSection {
+    width: 448px;
+    height: 288px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .timerBlock {
+    margin: 0;
+  }
+
+  .timerClock {
+    justify-content: space-around;
+  }
+
+  .timerUnit {
+    width: 100px;
+    height: 128px;
+  }
+
+  .countdownUnit {
+    font-size: 3.5rem;
+  }
+
+  .timeUnit {
+    font-size: 1rem;
   }
 }
 
