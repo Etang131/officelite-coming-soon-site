@@ -168,21 +168,26 @@ button a {
   margin-top: 55px;
 }
 
-/* Timer section */
-.timerSection {
-  padding-bottom: 110px;
-  /*It's really close but open to suggestions to get it to 100%*/
-  color: #ffffff;
+.backgroundFooter {
+  position: absolute;
   background-color: #25293a;
   background-image: url("/starter-code/assets/home/bg-pattern-footer.svg");
   background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: bottom center;
-  overflow-y: visible;
+  bottom: -2260px;
+  height: 1202px;
+  width: 100%;
   z-index: -1;
-  padding-top: 125px;
 }
-/*It's really close but open to suggestions to get it to 100%*/
+
+/* Timer section */
+.timerSection {
+  color: #ffffff;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
 .timerBlock {
   margin: 0 6.4%;
 }
@@ -195,6 +200,7 @@ button a {
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 #timeTextBold {
