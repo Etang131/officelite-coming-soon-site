@@ -293,6 +293,14 @@ option {
 
 /*media queries*/
 @media only screen and (min-width: 768px) {
+  .container {
+    background-image: url("/starter-code/assets/home/bg-pattern-header.svg");
+    background-size: auto 26%;
+    background-position-x: 180%;
+    background-position-y: -8.5%;
+    background-repeat: no-repeat;
+  }
+
   .logoSection {
     margin: 50px 6.4%;
     text-align: start;
@@ -357,6 +365,14 @@ option {
     margin: 25px 0 0 3.2%;
   }
 
+  .cardBlue {
+    background-image: url("/starter-code/assets/home/bg-pattern-pricing.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: -340px;
+    background-position-y: -320px;
+  }
+
   .timerSection {
     width: 448px;
     height: 288px;
@@ -383,6 +399,15 @@ option {
 
   .timeUnit {
     font-size: 1rem;
+  }
+
+  .backgroundFooter {
+    background-size: auto;
+    background-size: 1454px 1454px;
+    background-position: -544px 15px;
+    height: 986px;
+    bottom: -190%;
+    background-position-x: center;
   }
 }
 
