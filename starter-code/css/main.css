@@ -412,4 +412,100 @@ option {
 }
 
 @media only screen and (min-width: 1440px) {
+  .container {
+    background-position: top center;
+    background-size: 1134px 1134px;
+    background-position-x: 210%;
+    background-position-y: -88.5%;
+    background-repeat: no-repeat;
+  }
+
+  .chartImg {
+    width: 475px;
+    height: auto;
+    margin: 0;
+  }
+
+  .heroSection {
+    height: auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .mainText {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .cardSection {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 508px;
+    width: 350px;
+    overflow: hidden;
+  }
+  /*I'm onto something*/
+  .cardDetails {
+    display: unset;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cardPricingSection {
+    width: auto;
+  }
+
+  .cardFeaturesSection {
+    width: auto;
+  }
+
+  .card ul {
+    margin: 0;
+  }
+
+  .tryForFree {
+    margin: auto auto;
+  }
+
+  .cardBlue {
+    background-position-x: center;
+  }
+
+  .backgroundFooter {
+    position: absolute;
+    background-size: 2300px 2300px;
+    background-position-x: -695px;
+    bottom: -8%;
+  }
+
+  .timerSection {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timerBlock {
+    margin-left: 3.2%;
+  }
+
+  .timerText {
+    text-align: left;
+  }
+
+  .footerBtn {
+    margin-top: 90px;
+    margin-right: 3.2%;
+  }
 }
