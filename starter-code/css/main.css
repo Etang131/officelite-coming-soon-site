@@ -260,6 +260,33 @@ button.blueBtn a:hover {
 }
 
 /*--------------------Sign up page styles-------------*/
+.containerSignUp {
+  background-image: url("/starter-code/assets/home/bg-pattern-header.svg");
+  background-position: top center;
+  background-size: auto 40%;
+  background-position-y: -27.5%;
+}
+
+.timerSectionSignUp {
+  padding: 45px 0;
+}
+
+.timerTextSignUp {
+  color: #333950;
+}
+
+.timerUnitSignUp {
+  background-color: rgba(81, 117, 255, 0.1);
+}
+
+.countdownUnitSignUp {
+  color: #5175ff;
+}
+
+.timeUnitSignUp {
+  color: rgba(51, 57, 80, 1);
+}
+
 .formSection {
   background: #ffffff;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
@@ -290,13 +317,20 @@ select {
   padding-bottom: 25px;
 }
 
-option {
-  padding-top: 12.5px;
+/*Need to fix color */
+select#package {
+  margin-top: 14.5px;
+  font-weight: bold;
+  color: rgba(51, 57, 80, 1);
 }
 
-.test {
-  color: #333950;
-  font-weight: bold;
+option {
+  padding-top: 14.5px;
+}
+
+/*Need to fix color */
+#packagePrice {
+  color: rgba(51, 57, 80, 0.4);
 }
 
 .submitBtn {
