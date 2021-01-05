@@ -12,7 +12,7 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container containerSignUp">
     <div class="logoSection">
       <a href="/starter-code/index.html"><img class="logoImg" src="/starter-code/assets/shared/logo.svg" alt="Logo"></a>
     </div>
@@ -21,25 +21,25 @@
       <p class="mainText"> Easily manage your projects. Get on the list and receive in-app perks available only to 
       early subscribers. We are moving into final development and getting ready for official launch soon.</p>
     </div>
-    <div class="timerSection">
+    <div class="timerSection timerSectionSignUp">
       <div class="timerBlock">
-        <p class="timerText">Coming <span id="timeTextBold">4 Nov 2020</span></p>
+        <p class="timerText timerTextSignUp">Coming <span id="timeTextBold">4 Nov 2020</span></p>
         <div class="timerClock">
-          <div class="timerUnit">
-            <p class="countdownUnit"> <span id="daysUnit">47</span></p>
-              <p class="timeUnit">days</p>
+          <div class="timerUnit timerUnitSignUp">
+            <p class="countdownUnit countdownUnitSignUp"> <span id="daysUnit">47</span></p>
+              <p class="timeUnit timeUnitSignUp">days</p>
             </div>
-          <div class="timerUnit">
-            <p class="countdownUnit"> <span id="hoursUnit">07</span></p>
-             <p class="timeUnit">hours</p>
+          <div class="timerUnit timerUnitSignUp">
+            <p class="countdownUnit countdownUnitSignUp"> <span id="hoursUnit">07</span></p>
+             <p class="timeUnit timeUnitSignUp">hours</p>
             </div>
-          <div class="timerUnit">
-            <p class="countdownUnit"> <span id="minsUnit">56</span></p>
-             <p class="timeUnit">min</p>
+          <div class="timerUnit timerUnitSignUp">
+            <p class="countdownUnit countdownUnitSignUp"> <span id="minsUnit">56</span></p>
+             <p class="timeUnit timeUnitSignUp">min</p>
             </div>
-          <div class="timerUnit">
-            <p class="countdownUnit"> <span id="secoundsUnit">14</span></p>
-              <p class="timeUnit">sec</p>
+          <div class="timerUnit timerUnitSignUp">
+            <p class="countdownUnit countdownUnitSignUp"> <span id="secoundsUnit">14</span></p>
+              <p class="timeUnit timeUnitSignUp">sec</p>
             </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
         <input type="email" id="email" name="email" placeholder="Email Address">
         <label for="package"></label>
         <select name="package" id="package">
-          <option value="basic"><Span>Basic Pack</Span> Free</option>
+          <option value="basic"><span>Basic Pack</span> <p id="packagePrice"> Free</p></option>
           <option value="pro"><span>Pro Pack</span> $9.99</option>
           <option value="ultimate"><span>Ultimate Pack</span> $19.99</option>
         </select>
@@ -60,7 +60,7 @@
         <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
         <label for="company"></label>
         <input type="text" id="company" name="company" placeholder="Company">
-        <button><a href="#">Get on the list</a></button>
+        <button class="submitBtn"><a href="#">Get on the list</a></button>
       </form>
     </div>
   </div>
