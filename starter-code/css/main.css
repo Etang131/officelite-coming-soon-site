@@ -1,6 +1,9 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   /*https://stackoverflow.com/questions/8541081/css-set-a-background-color-which-is-50-of-the-width-of-the-window*/
+}
+
+.backGroundMix {
   background: linear-gradient(180deg, #ffffff 56%, #25293a 44%);
 }
 
@@ -260,6 +263,11 @@ button.blueBtn a:hover {
 }
 
 /*--------------------Sign up page styles-------------*/
+.backGroundMixSignUp {
+  /*background: linear-gradient(180deg, #ffffff 68%, #25293a 32%); */
+  background: linear-gradient(180deg, #ffffff 100%, #25293a 0%);
+}
+
 .containerSignUp {
   background-image: url("/starter-code/assets/home/bg-pattern-header.svg");
   background-position: top center;
@@ -293,7 +301,7 @@ button.blueBtn a:hover {
   border-radius: 13px;
   width: 327px;
   height: 465px;
-  margin: 0 auto;
+  margin: 0 auto 125px auto;
 }
 
 form {
@@ -301,6 +309,8 @@ form {
   height: 417px;
   margin: 10px auto;
 }
+
+/*Still having issues with this*/
 
 input,
 select {
@@ -313,24 +323,49 @@ select {
   font-size: 1rem;
   line-height: 1.75rem;
   color: #747b95;
-  opacity: 0.5;
   padding-bottom: 25px;
 }
 
-/*Need to fix color */
+input {
+  outline: none;
+}
+
+select {
+  background: url("/starter-code/assets/sign-up/icon-arrow-down.svg") no-repeat
+    right #fff;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+  background-position-y: 10px;
+}
+
+select::placeholder {
+  color: #747b95;
+}
+
+select::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: auto;
+  top: 6px;
+  padding-right: 20px;
+  color: #5175ff;
+}
+
 select#package {
   margin-top: 14.5px;
   font-weight: bold;
-  color: rgba(51, 57, 80, 1);
+  outline: none;
 }
 
 option {
+  color: rgba(51, 57, 80, 1);
   padding-top: 14.5px;
+  outline: none;
 }
 
-/*Need to fix color */
-#packagePrice {
-  color: rgba(51, 57, 80, 0.4);
+.packagePrice {
+  color: rgba(51, 57, 80, 0.5);
 }
 
 .submitBtn {
@@ -343,6 +378,19 @@ option {
 .submitBtn a {
   color: #ffffff;
   font-weight: bold;
+}
+
+.backgroundFooterSignUp {
+  position: absolute;
+  background-color: #25293a;
+  background-image: url("/starter-code/assets/home/bg-pattern-footer.svg");
+  background-size: 120%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  bottom: -500px;
+  height: 375px;
+  width: 100%;
+  z-index: -1;
 }
 
 /*media queries*/
@@ -462,6 +510,32 @@ option {
     z-index: -1;
     bottom: -1500px;
   }
+
+  /*Sign Up form styles 768px*/
+  .heroSection {
+    margin: 50px auto 0 auto;
+    text-align: center;
+    width: 85%;
+    height: auto;
+  }
+
+  .formSection {
+    width: 445px;
+    height: 508px;
+    margin: 0 auto 125px auto;
+  }
+
+  form {
+    width: 360px;
+  }
+
+  .backgroundFooterSignUp {
+    background-size: 120%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    bottom: -650px;
+    height: 380px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -561,5 +635,59 @@ option {
   .footerBtn {
     margin-top: 90px;
     margin-right: 3.2%;
+  }
+
+  /*Sign Up form styles 1440px*/
+  .containerSignUp {
+    display: flex;
+    flex-direction: row;
+    background-size: auto;
+    background-position-x: 300%;
+    background-position-y: 180%;
+    overflow-x: hidden;
+  }
+
+  .informationSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 60%;
+    margin: 0 5%;
+  }
+
+  .logoSectionSignUp {
+    margin: 100px 13%;
+  }
+
+  .heroSectionSignUp {
+    text-align: left;
+    margin: auto 5%;
+    width: 100%;
+  }
+
+  .mainTextSignUp {
+    width: 75%;
+  }
+
+  .timerClockSignUp {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .formSection {
+    width: 445px;
+    height: 508px;
+    margin: auto 10% auto 0;
+  }
+
+  form {
+    width: 445px;
+  }
+
+  .backGroundMixSignUp {
+    background: linear-gradient(90deg, #ffffff 70%, #25293a 30%);
   }
 }
