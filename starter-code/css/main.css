@@ -310,10 +310,7 @@ form {
   margin: 10px auto;
 }
 
-/*Still having issues with this*/
-
-input,
-select {
+input {
   height: 45px;
   width: 279px;
   border: none;
@@ -323,10 +320,7 @@ select {
   font-size: 1rem;
   line-height: 1.75rem;
   color: #747b95;
-  padding-bottom: 25px;
-}
-
-input {
+  padding: 12px 15px;
   outline: none;
 }
 
@@ -334,8 +328,31 @@ select {
   background: url("/starter-code/assets/sign-up/icon-arrow-down.svg") no-repeat
     right #fff;
   -webkit-appearance: none;
-  background-position-x: 244px;
+  background-position-x: 254px;
   background-position-y: 10px;
+  height: 45px;
+  width: 295px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+  outline: none;
+  /*these target the actual text*/
+  color: rgba(51, 57, 80, 1);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+
+/*Code below I haven't fixed yet*/
+
+select option:hover {
+  background-color: #ffffff;
+  border-bottom: #5175ff 1px solid 80%;
+}
+
+select option {
+  background: #ffffff;
+  color: rgba(51, 57, 80, 1);
 }
 
 select::placeholder {
@@ -348,8 +365,6 @@ select::after {
   width: 11px;
   height: auto;
   top: 6px;
-  padding-right: 20px;
-  color: #5175ff;
 }
 
 select#package {
@@ -359,7 +374,6 @@ select#package {
 }
 
 option {
-  color: rgba(51, 57, 80, 1);
   padding-top: 14.5px;
   outline: none;
 }
@@ -372,7 +386,7 @@ option {
   background: #5175ff;
   width: 279px;
   height: 56px;
-  margin-top: 35px;
+  margin-top: 55px;
 }
 
 .submitBtn a {
@@ -684,6 +698,7 @@ option {
   }
 
   form {
+    margin-top: 20px;
     width: 445px;
   }
 
