@@ -526,7 +526,7 @@ option {
   }
 
   /*Sign Up form styles 768px*/
-  .heroSection {
+  .heroSectionSignUp {
     margin: 50px auto 0 auto;
     text-align: center;
     width: 85%;
@@ -559,6 +559,10 @@ option {
     background-position-x: 210%;
     background-position-y: -88.5%;
     background-repeat: no-repeat;
+  }
+
+  .logoSection {
+    margin: 100px 11.5%;
   }
 
   .chartImg {
@@ -644,6 +648,10 @@ option {
 
   .timerText {
     text-align: left;
+  }
+
+  .timerClock {
+    gap: 15px;
   }
 
   .footerBtn {
