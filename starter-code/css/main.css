@@ -389,6 +389,10 @@ option {
   margin-top: 55px;
 }
 
+.submitBtn:hover {
+  background: #829cff;
+}
+
 .submitBtn a {
   color: #ffffff;
   font-weight: bold;
