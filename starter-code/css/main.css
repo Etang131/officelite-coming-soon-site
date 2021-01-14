@@ -341,46 +341,28 @@ select {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.75rem;
-}
 
-/*Code below I haven't fixed yet*/
-
-select option:hover {
-  background-color: #ffffff;
-  border-bottom: #5175ff 1px solid 80%;
-}
-
-select option {
-  background: #ffffff;
-  color: rgba(51, 57, 80, 1);
-}
-
-select::placeholder {
-  color: #747b95;
-}
-
-select::after {
-  content: "";
-  position: relative;
-  width: 11px;
-  height: auto;
-  top: 6px;
-}
-
-select#package {
-  margin-top: 14.5px;
+  margin-top: 18.5px;
   font-weight: bold;
   outline: none;
 }
 
-option {
-  padding-top: 14.5px;
-  outline: none;
+/*Code below I haven't fixed yet*/
+.dropDown {
+  padding-bottom: 25px;
 }
 
+/*This allows me to style when the select is open*/
+.dropDown:focus {
+  padding-left: 20px;
+}
+
+/*IS not working yet*/
 .packagePrice {
   color: rgba(51, 57, 80, 0.5);
 }
+
+/*Code below this is working as normal*/
 
 .submitBtn {
   background: #5175ff;
