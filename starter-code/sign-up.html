@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/starter-code/css/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="/starter-code/css/main.css">
+  <script src="app.js"></script>
 
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
@@ -53,16 +54,16 @@
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="Email Address">
         <label for="package"></label>
-        <select name="package" id="package">
-          <option value="basic"><span>Basic Pack</span> <p class="packagePrice"> Free</p></option>
-          <option value="pro"><span>Pro Pack</span> $9.99</option>
-          <option value="ultimate"><span>Ultimate Pack</span> $19.99</option>
+        <select class="dropDown" name="package" id="package">
+          <option value="basic">Basic Pack<span class="packagePrice"> Free</span></option>
+          <option value="pro">Pro Pack<span class="packagePrice"> $9.99</span></option>
+          <option value="ultimate">Ultimate Pack<span class="packagePrice"> $19.99</span></option>
         </select>
         <label for="phoneNumber"></label>
-        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
         <label for="company"></label>
         <input type="text" id="company" name="company" placeholder="Company">
-        <button class="submitBtn"><a href="#">Get on the list</a></button>
+        <button id="sumbit" class="submitBtn"><a href="#">Get on the list</a></button>
       </form>
     </div>
     <div class="backgroundFooterSignUp"></div>
