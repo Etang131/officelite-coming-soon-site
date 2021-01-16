@@ -1,33 +1,31 @@
-// let daysLeft = document.getElementById("daysUnit");
-// let hoursLeft = document.getElementById("hoursUnit");
-// let minsLeft = document.getElementById("minsUnit");
-// let secoundsLeft = document.getElementById("secoundsUnit");
-// let countDownDayDisplay = document.getElementById("timeTextBold");
+//Get Current Date
+var currentDate = new Date();
 
-// //Get Current Date
-// let currentDate = new Date();
-// console.log(currentDate);
+//Set the future date
+var futureDate = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
 
-// //Set countDownDayDisplay be the day we want
-// var future = new Date();
-// future.setDate(future.getDate() + 30);
+var x = setInterval(function () {
+  // Find the distance between now and the future date
+  var distance = futureDate - currentDate;
 
-// countDownDayDisplay = `${future.getDate} + " " + ${future.getMonth} + " " `;
+  // // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-// //store future date to be 30 days from current date to make count dynamic
-// let futureDate = currentDate + 30;
+  //Display the result
+  document.getElementById("daysUnit").innerText = days;
+  document.getElementById("hoursUnit").innerText = hours;
+  document.getElementById("minsUnit").innerText = minutes;
+  document.getElementById("secoundsUnit").innerText = seconds;
 
-// //Set html to be 30 days from current date
-// //countdown from date
-// //stop counting down when you reach the date
+  // let countDownDayDisplay = document.getElementById("timeTextBold");
 
-var distance = futureDate - currentDate;
-
-// // Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  if (distance < 0) {
+    clearInterval(x);
+  }
+}, 1000);
 
 // FORM Validator --------------------------------------------
 
