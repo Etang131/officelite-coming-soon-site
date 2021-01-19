@@ -26,30 +26,24 @@ var x = setInterval(function () {
   document.getElementById("minsUnit").innerText = minutes;
   document.getElementById("secoundsUnit").innerText = seconds;
 
-  // Countdown Date text above counter
-  //This works but it's not completely what I need
-  // document.getElementById("timeTextBold").innerText = new Date(
-  // futureDate
-  //).toDateString();
-
   var d = new Date(futureDate);
   let futureDay = d.getDate();
   //console.log(futureDay);
 
   var m = new Date(futureDate);
   var months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   let futureMonth = months[m.getMonth()];
   //console.log(futureMonth);
@@ -58,9 +52,15 @@ var x = setInterval(function () {
   let futureYear = y.getFullYear();
   //console.log(futureYear);
 
-  document.getElementById("timeTextBold").innerText = new Date(
-    futureDate
-  ).toDateString();
+  // Countdown Date text above counter
+  //This works but it's not completely what I need
+  // document.getElementById("timeTextBold").innerText = new Date(
+  // futureDate
+  //).toDateString();
+
+  document.getElementById(
+    "timeTextBold"
+  ).innerText = `${futureDay}  ${futureMonth}  ${futureYear}`;
 
   // If the count down is over, write some text
   if (distance < 0) {
