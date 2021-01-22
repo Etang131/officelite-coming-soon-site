@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/starter-code/css/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="/starter-code/css/main.css">
-  <script src="app.js"></script>
+  <script defer src="app.js"></script>
 
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
@@ -48,45 +48,35 @@
     </div>
   </div>
     <div class="formSection">
-      <form action="">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Name">
-        <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="Email Address">
-        <label for="package"></label>
-        <select class="dropDown" name="package" id="package">
-          <option value="basic">Basic Pack<span class="packagePrice"> Free</span></option>
-          <option value="pro">Pro Pack<span class="packagePrice"> $9.99</span></option>
-          <option value="ultimate">Ultimate Pack<span class="packagePrice"> $19.99</span></option>
-        </select>
-        <label for="phoneNumber"></label>
+      <form id="form">
+        <div class="formBlock">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="formBlock">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="formBlock"> 
+          <label for="package"></label>
+          <select class="dropDown" name="package" id="package">
+            <option value="basic">Basic Pack<span class="packagePrice"> Free</span></option>
+            <option value="pro">Pro Pack<span class="packagePrice"> $9.99</span></option>
+            <option value="ultimate">Ultimate Pack<span class="packagePrice"> $19.99</span></option>
+          </select></div>
+        <div class="formBlock">
+          <label for="phoneNumber"></label>
         <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
-        <label for="company"></label>
-        <input type="text" id="company" name="company" placeholder="Company">
-        <button id="sumbit" class="submitBtn"><a href="#">Get on the list</a></button>
+        </div>
+        <div class="formBlock">
+          <label for="company"></label>
+          <input type="text" id="company" name="company" placeholder="Company">
+        </div>
+        <button id="submit" class="submitBtn"><a href="#">Get on the list</a></button>
       </form>
     </div>
     <div class="backgroundFooterSignUp"></div>
   </div>
  
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above 
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-  -->
-
 </body>
 </html>
