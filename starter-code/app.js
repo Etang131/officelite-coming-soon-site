@@ -123,10 +123,10 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
   const formBlock = input.parentElement; // .formBlock
-  const small = formBlock.querySelector("small");
+  const errorInputDisplay = formBlock.querySelector("input");
 
-  // add error message inside small tag
-  small.innerText = message;
+  // add error message inside input text tag
+  errorInputDisplay.innerText.value = message;
 
   //add error class
   formBlock.className = "formBlock failure";
@@ -134,7 +134,7 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
   const formBlock = input.parentElement;
-  formBlock.className = "formBlock";
+  formBlock.className = "formBlockSuccess";
 }
 
 function isEmail(email) {
