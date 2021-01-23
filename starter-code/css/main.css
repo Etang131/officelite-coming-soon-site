@@ -327,7 +327,6 @@ input {
 select {
   background: url("/starter-code/assets/sign-up/icon-arrow-down.svg") no-repeat
     right #fff;
-  -webkit-appearance: none;
   background-position-x: 254px;
   background-position-y: 10px;
   height: 45px;
@@ -345,6 +344,11 @@ select {
   margin-top: 18.5px;
   font-weight: bold;
   outline: none;
+
+  /*Replace the default styles*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /*Code below I haven't fixed yet*/
@@ -353,8 +357,9 @@ select {
 }
 
 /*This allows me to style when the select is open*/
-.dropDown:focus {
-  padding-left: 20px;
+.dropDown:focus,
+.dropDown:hover {
+  outline: none;
 }
 
 /*IS not working yet*/
@@ -378,6 +383,17 @@ select {
 .submitBtn a {
   color: #ffffff;
   font-weight: bold;
+}
+
+/*submitting styles*/
+.formBlock.failure {
+  color: #f05b5b;
+  border-bottom: 1px solid #f05b5b;
+}
+
+.formBlockSuccess {
+  color: #25293a;
+  border-bottom: none;
 }
 
 .backgroundFooterSignUp {
