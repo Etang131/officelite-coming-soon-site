@@ -314,7 +314,6 @@ input {
   height: 45px;
   width: 279px;
   border: none;
-  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -333,14 +332,12 @@ select {
   width: 295px;
   padding-bottom: 15px;
   border: none;
-  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
   outline: none;
   /*these target the actual text*/
   color: rgba(51, 57, 80, 1);
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.75rem;
-
   margin-top: 18.5px;
   font-weight: bold;
   outline: none;
@@ -349,6 +346,10 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.borderBottomForm {
+  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
 }
 
 /*Code below I haven't fixed yet*/
@@ -388,6 +389,7 @@ select {
 /*submitting styles*/
 .formBlock.failure {
   color: #f05b5b;
+  /*Need to make seperate statements that change border bottom on input and select tags*/
   border-bottom: 1px solid #f05b5b;
 }
 

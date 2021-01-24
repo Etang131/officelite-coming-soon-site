@@ -126,8 +126,12 @@ function setErrorFor(input, message) {
   const errorInputDisplay = formBlock.querySelector("input");
 
   // add error message inside input text tag
-  errorInputDisplay.innerText.value = message;
-
+  errorInputDisplay.value = message;
+  //remove existing border bottom
+  var borderBottom = document.getElementsByClassName("borderBottomForm");
+  while (borderBottom.length > 0) {
+    borderBottom[0].classList.remove("borderBottomForm");
+  }
   //add error class
   formBlock.className = "formBlock failure";
 }
