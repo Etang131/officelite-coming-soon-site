@@ -323,6 +323,16 @@ input {
   outline: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: #ffffff !important;
+  color: #555 !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #555555 !important;
+}
+
 select {
   background: url("/starter-code/assets/sign-up/icon-arrow-down.svg") no-repeat
     right #fff;
@@ -353,6 +363,25 @@ select {
 }
 
 /*Code below I haven't fixed yet*/
+.formBlock {
+  position: relative;
+}
+
+.formBlock i {
+  background-image: url("/starter-code/assets/sign-up/icon-cross.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  height: 24px;
+  width: 24px;
+  visibility: hidden;
+}
+
+.formBlock.failure i {
+  visibility: visible;
+}
+
 .dropDown {
   padding-bottom: 25px;
 }
