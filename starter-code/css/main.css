@@ -425,7 +425,7 @@ select {
 
 .formBlockSuccess {
   color: #25293a;
-  border-bottom: none;
+  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
 }
 
 .backgroundFooterSignUp {
