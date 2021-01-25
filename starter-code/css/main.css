@@ -365,6 +365,7 @@ select {
 /*Code below I haven't fixed yet*/
 .formBlock {
   position: relative;
+  overflow-x: auto;
 }
 
 .formBlock i {
@@ -403,7 +404,7 @@ select {
   background: #5175ff;
   width: 279px;
   height: 56px;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .submitBtn:hover {
